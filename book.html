@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Form</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="Images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Images//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon-16x16.png">
+    <link rel="manifest" href="Images/site.webmanifest">
+
+    <style>
+      #form1 {
+        width: 30%;
+        color: White;
+        background-color: rgba(126, 47, 126, 0.3);
+        padding: 10px 20px;
+        border-radius: 10px;
+        font-size: 20px;
+      }
+
+      body {
+        height: 100vh;
+        background-image: url("Images/bg7.gif");
+        background-position: center;
+        background-size: cover;
+        margin-bottom: 200px;
+      }
+
+      #header {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+
+      #links {
+        margin-top: 20px;
+        width: 500px;
+        display: flex;
+        justify-content: space-evenly;
+      }
+
+      .button {
+        display: inline-block;
+
+        padding: 15px 25px;
+        font-size: 20px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: rgb(26, 24, 24);
+        background-color: #64fadf;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 3px rgb(247, 219, 219);
+      }
+
+      .button:hover {
+        background-color: #2bdbf3;
+        color: rgb(16, 11, 11);
+      }
+
+      .button:active {
+        background-color: #22ecf7;
+        color: rgb(16, 11, 11);
+        transform: translateY(4px);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <div>
+        <a href="landing_page.html"
+          ><img src="Images/logo.jpg" alt="logo" width="100" height="80"
+        /></a>
+      </div>
+      <div id="links">
+        <a href="about_us.html"><button class="button">About Us</button></a>
+        <a href="packages.html"><button class="button">Packages</button></a>
+        <a href="contact.html"><button class="button">Contact Us</button></a>
+      </div>
+    </div>
+    <form id="form1" method="post" action="rform.html">
+      <label>First Name</label>
+      <input name="fname" type="text" required />
+      <br />
+      <br />
+      <label>Last Name</label>
+      <input name="lname" type="text" required />
+      <br />
+      <br />
+      <label>Gender</label>
+      <br />
+      <input type="radio" name="gender" value="male" /> Male
+      <input type="radio" name="gender" value="female" /> Female
+      <br />
+      <br />
+      <label>Destination of Interest</label>
+      <input name="dname" type="text" required />
+      <br />
+      <br />
+      <label>Number of travellers</label>
+      <input name="dname" type="number" required />
+
+      <br /><br />
+      <input type="submit" />
+    </form>
+  </body>
+</html>

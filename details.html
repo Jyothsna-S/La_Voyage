@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Details</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="Images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Images//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon-16x16.png">
+    <link rel="manifest" href="Images/site.webmanifest">
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      /* Style the header */
+      header {
+        background-color: #666;
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+      }
+
+      /* Create two columns/boxes that floats next to each other */
+      nav {
+        float: left;
+        width: 50%;
+        height: 300px; /* only for demonstration, should be removed */
+        background: #ccc;
+        padding: 20px;
+      }
+
+      /* Style the list inside the menu */
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      article {
+        float: left;
+        padding: 20px;
+        width: 50%;
+        background-color: #f1f1f1;
+        height: 300px;
+      }
+
+      /* Clear floats after the columns */
+      section::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Style the footer */
+      footer {
+        background-color: #777;
+        padding: 10px;
+        text-align: center;
+        color: white;
+      }
+
+      /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+      @media (max-width: 600px) {
+        nav,
+        article {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      #header {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+
+      #links {
+        margin-top: 20px;
+        width: 500px;
+        display: flex;
+        justify-content: space-evenly;
+      }
+
+      .button {
+        display: inline-block;
+
+        padding: 15px 25px;
+        font-size: 20px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: rgb(26, 24, 24);
+        background-color: #64fadf;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 3px rgb(247, 219, 219);
+      }
+
+      .button:hover {
+        background-color: #2bdbf3;
+        color: rgb(16, 11, 11);
+      }
+
+      .button:active {
+        background-color: #22ecf7;
+        color: rgb(16, 11, 11);
+        transform: translateY(4px);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <div>
+        <a href="landing_page.html"
+          ><img src="Images/logo.jpg" alt="logo" width="100" height="80"
+        /></a>
+      </div>
+      <div id="links">
+        <a href="about_us.html"><button class="button">About Us</button></a>
+        <a href="packages.html"><button class="button">Packages</button></a>
+        <a href="contact.html"><button class="button">Contact Us</button></a>
+      </div>
+    </div>
+
+    <header>
+      <h2>Closer look at the Packages</h2>
+    </header>
+
+    <section>
+      <nav>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/n2ZvJd8aDRU"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </nav>
+
+      <article>
+        <h1>Spain</h1>
+        <p>
+          Barcelona, Madrid, Seville and Valencia cities are covered in this
+          trip. There are infinite things to do in Spain, plenty of adventurous
+          activities. Otherworldly architecture, colorful markets, and tasty tapas await you
+          in the Catalan capital.
+        </p>
+        <p>
+            Main spots - 
+            <ul>
+                <li>The Cathedral of the Holy Cross and St. Eulalia (Gothic)</li>
+                <li>Gothic basilica of Santa Maria del Mar</li>
+                <li>Gothic basilica of Santa Maria del Pi Romanesque church of Sant Pau del Camp
+                    Palau Reial Major, medieval residence of the sovereign Counts of
+                    Barcelona, later Kings of Aragon</li>
+            </ul>
+              
+        </p>
+      </article>
+    </section>
+
+    <section>
+      <nav>
+        <iframe
+          width="560"
+          height="300"
+          src="https://www.youtube.com/embed/oSexfR0Ubzw"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </nav>
+
+      <article>
+        <h1>Rome</h1>
+        <p>
+            Rome today is one of the most important tourist destinations of the world, due to the 
+            incalculable immensity of its archaeological and artistic treasures. Among the most significant resources are the many museums - 
+            Musei Capitolini, the Vatican Museums and the Galleria Borghese and others dedicated to 
+            modern and contemporary art - aqueducts, fountains, churches, palaces, historical buildings,
+            the monuments and ruins of the Roman Forum, and the Catacombs. 
+          </p>
+          <p>
+              Main spots - 
+              <ul>
+                  <li>The Pantheon, The Colosseum</li>
+                  <li>The Victor Emmanuel II Monument</li>
+                  <li>Ostia Lido beach</li>
+              </ul>
+                
+          </p>
+      </article>
+    </section>
+
+    <section>
+      <nav>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/MQRPS2d9AqU"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </nav>
+
+      <article>
+        <h1>Australia</h1>
+        <p>
+          Australia is the most beautiful island. With lots of adventurous activities and 
+          beautiful cities like Sydney and Melbourne, and splendid beaches adorning the coasts, Australia is 
+          a definite package you must add to your cart!
+        </p>
+        <p>
+            Main cities - Sydney, Melbourne 
+            <br>
+            For more details, visit the below links
+            <ul>
+                <li><a href="https://en.wikipedia.org/wiki/Sydney">Sydney</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Melbourne">Melbourne</a></li>
+            </ul>
+        </p>
+      </article>
+    </section>
+
+    <section>
+      <nav>
+        <iframe
+          width="560"
+          height="280"
+          src="https://www.youtube.com/embed/53MxEHIZlRk"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </nav>
+
+      <article>
+        <h1>North India</h1>
+        <p>
+          This is a <h4>Customizable Package</h4>. <br>
+          You can choose which cities in North India you want to explore more. We offer Agra, Delhi, Shimla 
+          as the standard base package. Our customers have the liberty to pick their best interest
+        </p>
+      </article>
+    </section>
+
+    <footer>
+     <a href="book.html"><button class="button">Register Now!</button></a>
+      
+    </footer>
+  </body>
+</html>
